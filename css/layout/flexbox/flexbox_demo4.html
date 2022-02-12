@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flexbox demo4</title>
+	<style type="text/css">
+		.flex-container {
+		  
+		  display: flex;
+
+		  /*它合并了
+		  flex-direction
+		  flex-wrap*/
+		  flex-flow: row wrap;
+
+		  justify-content: space-around;	  
+		  padding: 0;
+		  margin: 0;
+
+		  /*去除ul的列表样式*/
+		  list-style: none;
+		  
+		}
+
+		.flex-item {
+		  background: tomato;
+		  padding: 5px;
+		  width: 200px;
+		  height: 150px;
+		  margin-top: 10px;
+		  line-height: 150px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 3em;
+		  text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="flex-container">
+	  <li class="flex-item">1</li>
+	  <li class="flex-item">2</li>
+	  <li class="flex-item">3</li>
+	  <li class="flex-item">4</li>
+	  <li class="flex-item">5</li>
+	  <li class="flex-item">6</li>
+	</ul>
+</body>
+</html>
