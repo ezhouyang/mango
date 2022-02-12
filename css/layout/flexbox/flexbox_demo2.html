@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flexbox demo2</title>
+    <style>
+        .container {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-items: center;
+            justify-content: center;
+            align-items: baseline;
+            gap: 20px;
+            margin: 20px;
+            background-color: aliceblue;
+            width: 300px;
+
+        }
+        .container div {
+            background-color: cornflowerblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        .item1 {
+            order: 7;
+        }
+        .item2 {
+            order: 2;
+        }
+        .item3 {
+            order: 1;
+        }
+        .item4 {
+            order: 0;
+        }
+        .item5 {
+            flex-grow: 2;
+        }
+        .item6 {
+            flex-grow: 4;
+        }
+        .item7 {
+            flex-grow: 4;
+        }
+        .item8 {
+            order: 7;
+        }
+        .item9 {
+            order: 6;
+        }
+        .item10 {
+            order: 5;
+            flex-shrink: 3;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">flex-item1</div>
+        <div class="item2">flex-item2</div>
+        <div class="item3">flex-item3</div>
+        <div class="item4">flex-item4</div>
+        <div class="item5">flex-item5</div>
+        <div class="item6">flex-item6</div>
+        <div class="item7">flex-item7</div>
+        <div class="item8">flex-item8</div>
+        <div class="item9">flex-item9</div>
+        <div class="item10">flex-item10</div>
+    </div>
+</body>
+</html>
